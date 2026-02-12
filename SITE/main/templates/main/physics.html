@@ -1,0 +1,19 @@
+{%extends 'main/base.html'%}
+{%load static%}
+
+{% block name %}Физика{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <p class="mt"><u>Ниже представлены пробные варианты ОГЭ по физике</u></p>
+    <div class="options">
+        {% for el in model %}
+        <div>
+            <a href="{% url 'task_p' el.id %}" class="el">Вариант {{el.name}}</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

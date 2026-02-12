@@ -1,0 +1,52 @@
+.task {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+button {
+  width: 200px;
+  margin: 0 auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input {
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  padding: 8px 12px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  box-shadow: inset 1px 1px 3px #cccccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+input::placeholder {
+  color: #666666;
+  font-style: normal;
+}
+
+img {
+margin-bottom: 50px;
+}
+
+.vopr {
+  white-space: pre-wrap;
+}

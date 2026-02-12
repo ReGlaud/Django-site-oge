@@ -1,0 +1,193 @@
+{%extends 'main/base.html'%}
+{%load static%}
+
+{% block name %}Результаты{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<form method="post" action="{% url 'end_m' el.id %}">
+{% csrf_token %}
+
+<p align="justify" class="vopr">{{el.text}}</p>
+{% if el.imaget %}
+    <img src="{{ el.imaget.url }}" alt="Изображение">
+{% endif %}
+
+<br>
+
+<p align="justify" class="vopr"><b>1.</b> {{el.vopr1}}</p>
+{% if el.image1 %}
+    <img src="{{ el.image1.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.1 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer1}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer1}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv1}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob1}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>2.</b> {{el.vopr2}}</p>
+{% if el.image2 %}
+    <img src="{{ el.image2.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.2 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer2}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer2}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv2}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob2}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>3.</b> {{el.vopr3}}</p>
+{% if el.image3 %}
+    <img src="{{ el.image3.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.3 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer3}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer3}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv3}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob3}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>4.</b> {{el.vopr4}}</p>
+{% if el.image4 %}
+    <img src="{{ el.image4.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.4 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer4}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer4}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv4}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob4}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>5.</b> {{el.vopr5}}</p>
+{% if el.image5 %}
+    <img src="{{ el.image5.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.5 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer5}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer5}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv5}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob5}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>6.</b> {{el.vopr6}}</p>
+{% if el.image6 %}
+    <img src="{{ el.image6.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.6 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer6}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer6}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv6}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob6}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>7.</b> {{el.vopr7}}</p>
+{% if el.image7 %}
+    <img src="{{ el.image7.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.7 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer7}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer7}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv7}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob7}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>8.</b> {{el.vopr8}}</p>
+{% if el.image8 %}
+    <img src="{{ el.image8.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.8 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer8}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer8}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv8}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob8}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>9.</b> {{el.vopr9}}</p>
+{% if el.image9 %}
+    <img src="{{ el.image9.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.9 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer9}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer9}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv9}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob9}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>10.</b> {{el.vopr10}}</p>
+{% if el.image10 %}
+    <img src="{{ el.image10.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.10 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer10}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer10}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv10}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob10}}</i></p><br>
+{% endif %}
+
+    <p><i><b>Задания этой части (11–16) выполняются на компьютере. Ответами к заданиям 11, 12 являются слово или число. Результатом выполнения задания 13 - 16 является отдельный файл (для одного задания – один файл). Формат файла, его имя и каталог для сохранения Вам сообщат организаторы экзамена.  </b></i></p>
+    <br>
+
+<p align="justify" class="vopr"><b>11.</b> {{el.vopr11}}</p>
+{% if el.image11 %}
+    <img src="{{ el.image11.url }}" alt="Изображение">
+{% endif %}
+{% if my_value.11 %}
+    <p class="yes"><b>Ответ:</b> <b>{{user_answer11}}</b></p><br>
+{% else %}
+    <p class="no"><b>Ответ:</b> <b>{{user_answer11}}</b></p>
+    <p><b>Верный ответ:</b> <b>{{otv11}}</b></p>
+    <p><b>Объяснение:</b> <i>{{ob11}}</i></p><br>
+{% endif %}
+
+<p align="justify" class="vopr"><b>12.</b> {{el.vopr12}}</p>
+{% if el.image12 %}
+    <img src="{{ el.image12.url }}" alt="Изображение">
+{% endif %}<br><br>
+
+<p align="justify" class="vopr"><b>13.</b> {{el.vopr13}}</p>
+{% if el.image13 %}
+    <img src="{{ el.image13.url }}" alt="Изображение">
+{% endif %}
+    <p><i><b>Вопрос с развернутым ответом</b></i></p><br>
+    <p><b>Объяснение:</b> <i>{{ob13}}</i></p><br>
+    <p><b>Видео с объяснением:</b> <a href="{{el.myurl13}}">ссылка</a></p><br>
+
+<p align="justify" class="vopr"><b>14.</b> {{el.vopr14}}</p>
+{% if el.image14 %}
+    <img src="{{ el.image14.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Вопрос с развернутым ответом</b></i></p><br>
+    <p><b>Объяснение:</b> <i>{{ob14}}</i></p><br>
+    <p><b>Видео с объяснением:</b> <a href="{{el.myurl14}}">ссылка</a></p><br>
+
+<p align="justify" class="vopr"><b>15.</b> {{el.vopr15}}</p>
+{% if el.image15 %}
+    <img src="{{ el.image15.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Вопрос с развернутым ответом</b></i></p><br>
+
+<p align="justify" class="vopr"><b>16.</b> {{el.vopr16}}</p>
+{% if el.image16 %}
+    <img src="{{ el.image16.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Вопрос с развернутым ответом</b></i></p><br>
+    <p><b>Объяснение:</b> <i>{{ob16}}</i></p><br>
+
+</form>
+</div>
+
+
+{% endblock %}

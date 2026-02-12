@@ -1,0 +1,25 @@
+* {
+    marging: 0;
+    padding: 0;
+}
+
+img {
+    max-size: 100%;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: fff;
+}
+
+body {
+    background-color: fff;
+    color: 000;
+    font-family: 'poppins', sans-serif;
+    front-weight: 800;
+}

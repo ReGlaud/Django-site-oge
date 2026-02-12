@@ -1,0 +1,11 @@
+.yes {
+  color: green;
+}
+
+.no {
+  color: red;
+}
+
+p {
+  white-space: pre-wrap;
+}

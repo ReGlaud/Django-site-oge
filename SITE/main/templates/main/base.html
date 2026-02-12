@@ -1,0 +1,35 @@
+<!doctype html>
+{% load static %}
+{% csrf_token %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Подготовка к ЕГЕ</title>
+    <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/task.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/end.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{%static 'main/image/emblem.png'%}" class="logo">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/math/">Математика</a></li>
+                    <li><a href="/physics/">Физика</a></li>
+                    <li><a href="/informatics/">Информатика</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="name">{% block name %}{% endblock %}</div>
+        </div>
+    </header>
+
+{% block content %}{%endblock%}
+
+</body>
+</html>

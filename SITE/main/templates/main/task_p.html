@@ -1,0 +1,166 @@
+{%extends 'main/base.html'%}
+{%load static%}
+
+{% block name %}Вариант {{el.name}}{% endblock %}
+
+{% block content %}
+
+<div class="container task">
+
+<br>
+
+<form method="post" action="{% url 'end_p' el.id %}">
+{% csrf_token %}
+
+<p align="justify" class="vopr">{{el.text}}</p>
+{% if el.imaget %}
+    <img src="{{ el.imaget.url }}" alt="Изображение">
+{% endif %}
+
+<br>
+
+<p align="justify" class="vopr"><b>1.</b> {{el.vopr1}}</p>
+{% if el.image1 %}
+    <img src="{{ el.image1.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="1" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>2.</b> {{el.vopr2}}</p>
+{% if el.image2 %}
+    <img src="{{ el.image2.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="2" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>3.</b> {{el.vopr3}}</p>
+{% if el.image3 %}
+    <img src="{{ el.image3.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="3" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>4.</b> {{el.vopr4}}</p>
+{% if el.image4 %}
+    <img src="{{ el.image4.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="4" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>5.</b> {{el.vopr5}}</p>
+{% if el.image5 %}
+    <img src="{{ el.image5.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="5" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>6.</b> {{el.vopr6}}</p>
+{% if el.image6 %}
+    <img src="{{ el.image6.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="6" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>7.</b> {{el.vopr7}}</p>
+{% if el.image7 %}
+    <img src="{{ el.image7.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="7" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>8.</b> {{el.vopr8}}</p>
+{% if el.image8 %}
+    <img src="{{ el.image8.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="8" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>9.</b> {{el.vopr9}}</p>
+{% if el.image9 %}
+    <img src="{{ el.image9.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="9" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>10.</b> {{el.vopr10}}</p>
+{% if el.image10 %}
+    <img src="{{ el.image10.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="10" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>11.</b> {{el.vopr11}}</p>
+{% if el.image11 %}
+    <img src="{{ el.image11.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="11" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>12.</b> {{el.vopr12}}</p>
+{% if el.image12 %}
+    <img src="{{ el.image12.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="12" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>13.</b> {{el.vopr13}}</p>
+{% if el.image13 %}
+    <img src="{{ el.image13.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="13" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>14.</b> {{el.vopr14}}</p>
+{% if el.image14 %}
+    <img src="{{ el.image14.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="14" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>15.</b> {{el.vopr15}}</p>
+{% if el.image15 %}
+    <img src="{{ el.image15.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="15" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>16.</b> {{el.vopr16}}</p>
+{% if el.image16 %}
+    <img src="{{ el.image16.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="16" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>17.</b> {{el.vopr17}}</p>
+{% if el.image17 %}
+    <img src="{{ el.image17.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Это вопрос с развернутым ответом</b></i></p><br>
+
+<p align="justify" class="vopr"><b>18.</b> {{el.vopr18}}</p>
+{% if el.image18 %}
+    <img src="{{ el.image18.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="18" placeholder="Ответ" class="otv">
+
+<p align="justify" class="vopr"><b>19.</b> {{el.vopr19}}</p>
+{% if el.image19 %}
+    <img src="{{ el.image19.url }}" alt="Изображение">
+{% endif %}
+<input autocomplete="off" type="text" name="19" placeholder="Ответ" class="otv">
+
+    <p><i><b>Для заданий 20–22 необходимо записать полное решение, включающее  запись краткого условия задачи (Дано), запись формул, применение  которых необходимо  и достаточно для решения задачи, а также  математические преобразования  и расчёты, приводящие  к числовому  ответу. </b></i></p>
+    <br>
+
+<p align="justify" class="vopr"><b>20.</b> {{el.vopr20}}</p>
+{% if el.image20 %}
+    <img src="{{ el.image20.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Это вопрос с развернутым ответом</b></i></p><br>
+
+<p align="justify" class="vopr"><b>21.</b> {{el.vopr21}}</p>
+{% if el.image21 %}
+    <img src="{{ el.image21.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Это вопрос с развернутым ответом</b></i></p><br>
+
+<p align="justify" class="vopr"><b>22.</b> {{el.vopr22}}</p>
+{% if el.image22 %}
+    <img src="{{ el.image22.url }}" alt="Изображение">
+{% endif %}
+<p><i><b>Это вопрос с развернутым ответом</b></i></p><br>
+
+<br><br>
+
+<button type="submit">Отправить</button>
+
+</form>
+<br><br>
+
+</div>
+
+{% endblock %}
